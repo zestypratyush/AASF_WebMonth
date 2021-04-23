@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body style="background-color:rgb(192, 227, 231);">
+    <header>
+        <h1><u>ABC Public School</u></h1>
+        <style>
+            h2 {
+                text-align: center;
+            }
+        </style>
+        <h2 style="color:rgb(45, 40, 94)">Registration Form</h2>
+        <p>Form for admission in +2 : </p>
+
+    </header>
+    <br />
+    <main>
+            <h2>
+                <p>Personal Details
+                    <hr />
+                </p>
+            </h2>
+            <form action="" id="my_form">
+                <label for="fname">First name: </label>
+                <input type="text" id="fname" name="fname">
+                <label for="lname"> Last name : </label>
+                <input type="text" id="lname" name="lname">
+                <br><br>
+                <label for="father_name">Father's name: </label>
+                <input type="text" id="father_name" name="father_name">
+                <br><br>
+                <label for="e-mail">Enter e-mail: </label>
+                <input type="email" id="e-mail" placeholder="xyz@abc.com" />
+                <br><br>
+                <label for="uniq_type">Enter ID type : </label>
+                <select id="uniq_type" name="uniq_type">
+                    <option value="Aadhar">Aadhar</option>
+                    <option value="Passport">Passport</option>
+                </select>
+                <br><br>
+                <label for="uniq">Enter unique ID : </label>
+                <input type="number" id="uniq" name="uniq" placeholder="123456789">
+                <br><br>
+                <label for="gender">Enter gender : </label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            <h2>
+                <p>Contact Details
+                    <hr />
+                </p>
+            </h2>
+                <label for="phone">Enter Mobile Number : </label>
+                <input type="tel" id="phone" name="phone" placeholder="0123456789">
+                <br><br>
+                <label for="address">Enter Full Address : </label>
+                <input type="text" id="address" name="address">
+                <label for="pin">Enter Pin-code : </label>
+                <input type="number" id="pin" name="pin">
+
+                <br><br>
+                <label for="city">Enter city/district : </label>
+                <input type="text" id="city" name="city">
+                <label for="state">Enter state : </label>
+                <input type="text" id="state" name="state">
+
+                <fieldset>
+                    <legend>
+                        <h3>Subjects</h3>
+                    </legend>
+                    <p>Please pick any five of them.</p>
+                    <label for="sub">Choose Subjects:</label>
+                    <select id="sub" name="sub" size="7" multiple>
+                        <option value="phy">Physics</option>
+                        <option value="maths">Maths</option>
+                        <option value="chem">Chemistry</option>
+                        <option value="eng">English</option>
+                        <option value="phe">Physical Education</option>
+                        <option value="bot">Botany</option>
+                        <option value="zoo">Zoology</option>
+                    </select><br><br>
+                    <p>Hold down the Ctrl button to select multiple options.</p>
+                    
+                </fieldset>
+
+                <input type="submit" value="Submit">
+            </form>
+    
+          
+    </main>
+</body>
+
+</html>
